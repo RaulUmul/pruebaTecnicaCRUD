@@ -6,6 +6,7 @@ use App\Http\Controllers\MarcaController;
 use App\Http\Controllers\ProveedorController;
 use App\Http\Controllers\PresentacionController;
 use App\Http\Controllers\ZonaController;
+use App\Http\Controllers\ReportesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,8 @@ Route::get('/presentacion',[PresentacionController::class,'index'])->name('prese
 Route::get('/presentacion/create',[PresentacionController::class,'create'])->name('presentacion.create');
 Route::get('/zona',[ZonaController::class,'index'])->name('zona.index');
 Route::get('/zona/create',[ZonaController::class,'create'])->name('zona.create');
+
+// Reporteria
+Route::get('/reportes',[ReportesController::class,'index'])->name('reportes.index');
+Route::get('/reportes/general',[ReportesController::class,'reporteGeneral'])->name('reportes.general');
+Route::get('/reportes/proveedor',[ReportesController::class,'reporteProveedor'])->name('reportes.proveedor');

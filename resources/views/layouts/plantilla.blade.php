@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="{{asset('css/materialize.min.css')}}">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  {{--  Script pdf --}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
   <title>@yield('title')</title>
 </head>
 <body>
@@ -31,6 +33,7 @@
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href=""><i class="material-icons left">home</i>Inicio</a></li>
           <li><a href="{{route('producto.index')}}"><i class="material-icons left">grid_on</i>Dashboard</a></li>
+          <li><a href="{{route('reportes.index')}}"><i class="material-icons left">grid_on</i>Reportes</a></li>
         </ul>
       </div>
     </nav>
